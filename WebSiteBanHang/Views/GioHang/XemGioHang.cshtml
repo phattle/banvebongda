@@ -61,14 +61,14 @@ else
                 <tr>
                     <td>Họ tên</td>
                     <td>
-                        @Html.TextBox("TenKH", null, new { @class = "form-ValidationMessage-valid ", @data_val = "true", @data_val_required = "Billing Address is required" })
+                        @Html.TextBox("TenKH", null, new { @class = "form-ValidationMessage-valid ", @data_val = "true", @data_val_required = "required" })
                         <p style="color:red" id="TB_TenKH"></p>                        
                     </td>
                 </tr>
                 <tr>
                     <td>Địa chỉ</td>
                     <td>
-                        @Html.TextArea("DiaChi")
+                        @Html.TextArea("DiaChi", null, new { @class = "form-ValidationMessage-valid ", @data_val = "true", @data_val_required = "required" })
                         <span style="color:red" id="TB_DiaChi"></span>
                     </td>
 
@@ -76,14 +76,14 @@ else
                 <tr>
                     <td>Email</td>
                     <td>
-                        @Html.TextBox("Email")
+                        @Html.TextBox("Email", null, new { @class = "form-ValidationMessage-valid ", @data_val = "true", @data_val_required = "required" })
                         <p style="color:red" id="ktEmail"></p>
                     </td>
                 </tr>
                 <tr>
                     <td>Số điện thoại</td>
                     <td>
-                        @Html.TextBox("SoDienThoai")
+                        @Html.TextBox("SoDienThoai", null, new { @class = "form-ValidationMessage-valid ", @data_val = "true", @data_val_required = "required" })
                         <p style="color:red" id="TB_SoDienThoai"></p>
                     </td>
                 </tr>  
